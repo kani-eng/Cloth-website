@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - My Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Function to show an alert box when the form is submitted
+    function showAlert(event) {
+      event.preventDefault(); // Prevents the form from actually submitting
+      alert('Thank you for contacting us! We will get back to you soon.');
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <!-- Replace 'logo.png' with your logo file's name and path -->
+            <img src="logodesign.png" alt="Website Logo">
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you! Whether you have questions, need support, or want to schedule an appointment, feel free to get in touch using the form below or through the contact details provided.</p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p><a href="mailto:kanishkarastogi29@gmail.com">kanishkarastogi29@gmail.com</a></p>
+        </div>
+        <div class="contact-item">
+          <h3>Phone</h3>
+          <p><a href="tel:9027194307">9027194307</a></p>
+        </div>
+        <div class="contact-item">
+          <h3>Address</h3>
+          <p>Moradab "Letss Love urself"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <p>If you have any inquiries or need assistance, please fill out the form below and we will get back to you as soon as possible.</p>
+      <form action="#" method="post" id="contact-form" onsubmit="showAlert(event)">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

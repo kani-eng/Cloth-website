@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - My Website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Function to show an alert box when the "Shop Now" button is clicked
+    function showAlert() {
+      alert('Thank you for shopping with us! Your item will be added to the cart.');
+    }
+
+    // Toggle visibility of customization options
+    function toggleCustomizationOptions() {
+      var customizationOptions = document.getElementById("customization-options");
+      customizationOptions.style.display = customizationOptions.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <!-- Replace 'logo.png' with your logo file's name and path -->
+            <img src="logodesign.png" alt="Website Logo">
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+  <main>
+    <!-- Welcome Section -->
+    <section class="welcome-section">
+      <div class="section-content">
+        <!-- Text on the Right Side -->
+        <div class="text-content">
+          <h1>Welcome to Our Fashion Store!</h1>
+          <p>Explore our curated collections, and find the perfect outfit for any occasion. From everyday essentials to unique statement pieces, you're just a click away from upgrading your wardrobe.</p>
+          <p>Stay ahead of the fashion curve by following our blog for tips, styling advice, and behind-the-scenes looks at the latest trends!</p>
+        </div>
+    
+        <!-- Image on the Left Side -->
+        <div class="image-content">
+          <img src="Screenshot (1).png" alt="Fashionable Clothing" />
+        </div>
+      </div>
+    </section>
+    
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="products">
+        <div class="product-item">
+          <img src="Screenshot (2).png" alt="Product 1">
+          <h3>Classic Black Dress</h3>
+          <p>A timeless piece for any occasion. Elegant and versatile.</p>
+          <button onclick="showAlert()">Shop Now</button>
+        </div>
+        <div class="product-item">
+          <img src="Screenshot (3).png" alt="Product 2">
+          <h3>Casual T-Shirt</h3>
+          <p>Comfort meets style. Perfect for everyday wear.</p>
+          <button onclick="showAlert()">Shop Now</button>
+        </div>
+        <div class="product-item">
+          <img src="Screenshot (4).png" alt="Product 3">
+          <h3>Chic Denim Jacket</h3>
+          <p>Add a cool touch to any outfit with this stylish jacket.</p>
+          <button onclick="showAlert()">Shop Now</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about-container">
+        <div class="about-text">
+          <h2 class="about-heading">About Our Clothing Services</h2>
+          <p class="about-paragraph">
+            At <strong>My Clothing Services</strong>, we are dedicated to providing you with top-notch clothing customization, styling, and alteration services. Whether you're looking to enhance your wardrobe with personalized outfits or need a perfect fit for your clothes, we offer tailored solutions to suit your needs.
+          </p>
+          <p class="about-paragraph">
+            Our expert stylists are here to guide you through the process of choosing the right style for any occasion. We offer personalized consultations where we discuss your preferences and help you create looks that not only reflect your personality but also make you feel confident and comfortable.
+          </p>
+          <p class="about-paragraph">
+            With our alteration services, we ensure that every piece of clothing fits you perfectly. From basic hemming to major adjustments, we pride ourselves on our precision and skill. Additionally, we offer exciting customization options like embroidery, patches, and prints to give your clothing a unique and personal touch.
+          </p>
+        </div>
+  
+        <div class="about-image">
+          <!-- Replace with your desired image -->
+          <img src="Screenshot (5).png" alt="Clothing Services">
+        </div>
+      </section>
+
+    <!-- Services Section -->
+    <section class="styling-services">
+        <div class="service-content">
+          <div class="service-image">
+            <img src="Screenshot (6).png" alt="Styling Services">
+          </div>
+          <div class="service-text">
+            <h2>Personalized Styling</h2>
+            <p>Our expert stylists are here to help you find the perfect outfit for any occasion. Whether you're preparing for a special event, updating your wardrobe, or simply looking for inspiration, we offer one-on-one styling consultations to ensure you look and feel your best.</p>
+            <ul>
+              <li>Free Virtual Styling Consultations</li>
+              <li>Personalized Outfit Recommendations</li>
+              <li>Event Styling and Outfit Planning</li>
+            </ul>
+            <button id="consultation-btn">Book a Consultation</button>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Customization Services Section -->
+      <section class="customization">
+        <div class="service-content">
+          <div class="service-image">
+            <img src="Screenshot (7).png" alt="Customization Services">
+          </div>
+          <div class="service-text">
+            <h2>Product Customization</h2>
+            <p>Personalize your clothing by choosing from the options below:</p>
+            <button id="customization-btn" onclick="toggleCustomizationOptions()">Start Customizing</button>
+            <!-- Checkbox options will appear here -->
+            <div id="customization-options" style="display: none;">
+              <label>
+                <input type="checkbox" id="embroidery" name="customization" value="embroidery"> Embroidery
+              </label><br>
+              <label>
+                <input type="checkbox" id="patches" name="customization" value="patches"> Patches
+              </label><br>
+              <label>
+                <input type="checkbox" id="print" name="customization" value="print"> Print
+              </label><br><br>
+              <button id="submit-customization">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Alteration Services Section -->
+      <section class="alterations">
+        <div class="service-content">
+          <div class="service-image">
+            <img src="Screenshot (8).png" alt="Alteration Services">
+          </div>
+          <div class="service-text">
+            <h2>Alterations and Repairs</h2>
+            <p>We understand that the perfect fit makes all the difference. Our in-house tailors offer alterations and repairs to ensure your clothes fit you perfectly. Whether it’s hemming a pair of jeans or taking in a dress, we’ve got you covered.</p>
+            <ul>
+              <li>Hemming and Shortening</li>
+              <li>Letting Out or Taking In</li>
+              <li>Button Replacement and Zipper Fixes</li>
+            </ul>
+            <button id="schedule-appointment-btn">Schedule an Appointment</button>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
