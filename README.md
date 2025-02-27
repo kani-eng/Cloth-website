@@ -1,2 +1,4 @@
 # Cloth-website
-Letss Love urself
+# Love urself
+# Styling your clothes
+# customize ur cloth
